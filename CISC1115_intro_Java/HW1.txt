@@ -1,0 +1,13 @@
+//Professor Ziegler
+//HW1
+//Jinglin Tan
+
+class pgm1{
+	public static void main(String[] args){
+		int num;
+		for(num = 1; num < 100; num = num + 5){
+			System.out.println(num + " " + (num + 1) + " " + 
+		(num + 2) + " " + (num + 3) + " " + (num + 4));
+		}
+	}
+}

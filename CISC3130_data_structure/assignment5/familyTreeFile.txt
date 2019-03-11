@@ -1,0 +1,52 @@
+Jones 3
+Bob 2
+Dan 0
+Brian 1
+Richard 0
+Jake 1
+Michael 1
+Bill 0
+Deville 0
+
+Aaron 2
+Barney 3
+Caleb 1
+Dale 0
+David 4
+Dion 0
+Eric 0
+Earl 0
+Eliseo 0
+Enrique 0
+Erin 0
+
+Fabian 1
+Fletcher 2
+Gabriel 2
+Gordon 0
+Hai 0
+Henry 2
+Hong 0
+Ian 0
+
+Jacinto 5
+Jefferey 0
+Joey 0
+Jon 1
+Jonas 0
+John 1
+Kip 3
+Kent 0
+Kerry 0
+King 0
+Kurt 0
+
+Leo 1
+Lonny 2
+Mac 0
+Mike 2
+Max 0
+Noe 2
+Paul 0
+Philip 1
+Patrick 0

@@ -1,0 +1,31 @@
+//Professor Ziegler
+//HW2
+//Jinglin Tan
+
+This is the output of my first program:
+
+	  Table of Function Values
+
+
+Value of X	Value of Y	Status of Y
+   -3.0          -5.68325      Y IS NEGATIVE
+   -2.5          -7.46301      Y IS NEGATIVE
+   -2.0         -10.95474      Y IS NEGATIVE
+   -1.5         -25.69051      Y IS NEGATIVE
+   -1.0          -3.33333      Y IS NEGATIVE
+   -0.5           0.97838      Y IS POSITIVE
+    0.0           2.00000      Y IS POSITIVE
+    0.5           0.69884      Y IS POSITIVE
+    1.0          -1.66667      Y IS NEGATIVE
+    1.5          -8.56350      Y IS NEGATIVE
+    2.0          -2.19095      Y IS NEGATIVE
+    2.5          -0.67846      Y IS NEGATIVE
+    3.0           0.00000      Y IS ZERO
+    3.5           0.35134      Y IS POSITIVE
+    4.0           0.54264      Y IS POSITIVE
+
+The X value that gives the Y value that is closest to 10 is 0.0
+and the difference between this Y value and 10 is 8.00000
+Times of Y IS ZERO:     1
+Times of Y IS POSITIVE: 5
+Times of Y IS NEGATIVE: 9

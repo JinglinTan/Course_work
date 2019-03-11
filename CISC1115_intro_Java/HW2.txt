@@ -1,0 +1,85 @@
+//Professor Ziegler
+//HW2
+//Jinglin Tan
+
+import java.io.*;			//needed for File I/O
+
+/*program 2
+ * create a table to evaluate a formula y = f(x)
+ */
+class pgm2{
+	public static void main(String[] args) throws IOException{
+		double x, y;			//define X and Y for the table
+		double xClosest = 0;	//to store value of X when Y is closest to 10
+		double yClosest = 0;	//difference between the closest Y and 10
+		int firstLoop = 1;		//to assign yClosest = y for only once in loop
+		int zTimes = 0;			//count of y == 0
+		int pTimes = 0;			//count of y > 0
+		int nTimes = 0;			//count of y < 0
+		String status = " ";	//to store status of Y
+		
+		//create an output file object using the PrintWriter class
+		//PrintWriter OutputFile = new PrintWriter(System.out);
+		PrintWriter outputFile = new PrintWriter("c:/myoutput.txt");
+		
+		outputFile.println("This is the output of my first program:");
+		outputFile.println();
+		outputFile.println("\t  Table of Function Values");
+		outputFile.println();
+		outputFile.println("\nValue of X\tValue of Y\tStatus of Y");	//headings
+		
+		for(x = -3; x <= 4; x += 0.5){
+			y = (9 * x * x * x - 27 * x * x - 4 * x + 12) /
+					(Math.sqrt(3 * x * x + 1) + Math.abs(5 - x * x * x * x));
+			
+			//use if statements to assign Y status
+			if(y == 0){
+				status = "Y IS ZERO";
+				zTimes++;				//count y == 0
+			}
+			if(y > 0){
+				status = "Y IS POSITIVE";
+				pTimes++;				//count y > 0
+			}
+			if(y < 0){
+				status = "Y IS NEGATIVE";
+				nTimes++;				//count y < 0
+			}
+			
+			outputFile.printf("%7.1f%18.5f", x , y);	//print values of X and Y
+			outputFile.println("      " + status);		//print Y status
+			
+			//assign yClosest = y for only one time in the loop
+			if(firstLoop == 1){
+				yClosest = y;
+				firstLoop++;	 //going forward firstLoop will be 2, it will pass this if()
+			}
+			
+			//use if() to find the closest Y to 10 and the X that makes it
+			if(Math.abs(y - 10) < Math.abs(yClosest - 10)){
+				yClosest = y;
+				xClosest = x;
+			}
+		}
+		
+		outputFile.println();
+		outputFile.printf("The X value that gives the Y value that is closest to 10 is %.1f", xClosest);
+		outputFile.println();
+		outputFile.printf("and the difference between this Y value and 10 is %.5f", Math.abs(yClosest - 10));
+		
+		outputFile.println();
+		outputFile.println("Times of Y IS ZERO:     " + zTimes);
+		outputFile.println("Times of Y IS POSITIVE: " + pTimes);
+		outputFile.println("Times of Y IS NEGATIVE: " + nTimes);
+		
+		//flush the output buffer
+		outputFile.flush();
+		
+		//show that the program has completed
+		System.out.println("\nThe program is halting...");	
+		System.out.println("Stop");
+		
+		//close the file
+		outputFile.close();
+	}
+}
