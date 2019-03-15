@@ -1,0 +1,70 @@
+Test result of Personal Directory app:
+
+compile successful
+run successful
+
+search entry - student - undergraduate student - no result found
+search entry - student - graduate student - no result found
+search entry - mentor - academic mentor - no result found
+
+add entry student - undergraduate student - added student David C
+add entry student - graduate student - added student Jing T
+add entry mentor - academic mentor - added mentor Josh M
+add entry mentor - industry mentor - added mentor Jia Y
+
+list entries by first name- found all added entries in order(David C, Jia Y, Jing T, Josh M)
+list entries by first name- found all added entries in order(David C, Josh M, Jing T, Jia Y)
+
+save and exit
+rerun program successful
+list entries by first name - still found all added entries above(David C, Jia Y, Jing T, Josh M)
+meaning save and load work
+
+search entry - student - search student by first name - search "David" - found student David C
+search entry - student - search student by last name - search "T" - found student Jing T
+search entry - student - search by type undergraduate student - found student David C
+search entry - student - search by type graduate student - found student Jing T
+search entry - student - search student by mentor's last name successful - search "M" - no result found
+
+search entry - mentor - search mentor by first name - search "Josh" - found mentor Josh M
+search entry - mentor - search mentor by last name - search "Y" - found mentor Jia Y
+search entry - mentor - search by type academic mentor - found mentor Josh M
+search entry - mentor - search by type industry mentor - found mentor Jia Y
+
+search and select student David C
+add mentor - search mentor and select mentor Josh M - added Josh M to David's mentor list
+search student - search student by mentor's last name - search "M" - found student David C
+search and select mentor Jia Y
+add mentee - search student and select student Jing T - added Jing T to Jia's mentee list
+ping student - search student and select student Jing T - added Jing T to Jia's ping list
+search and select student Jing T
+remove ping - remove Jia's ping - remove successful
+search entry - member - search by first name - search "David" - found student David C
+search entry - member - search by last name - search "M" - found mentor Josh M
+save and exit
+
+add some mentors and pings to students
+save and exit
+rerun program
+list entries by first name - still found all added mentors and pings in according students
+meaning save and load work
+
+runtime test - enter 10000 testing entries - getting result as follow
+Runtime of adding 10000 entries is 25736526 nanoseconds
+Runtime of searching 10000 entries is 3011128 nanoseconds, around 0.003 seconds
+
+runtime test - enter 100000 testing entries - getting result as follow
+Runtime of adding 100000 entries is 291599846 nanoseconds
+Runtime of searching 100000 entries is 52554510 nanoseconds, around 0.052 seconds
+
+runtime test - enter 1000000 testing entries - getting result as follow
+Runtime of adding 1000000 entries is 2953192974 nanoseconds
+Runtime of searching 1000000 entries is 247097388 nanoseconds, around 0.247 seconds
+
+searching time is very fast
+
+conclusion: the program is bug-free for the commands above, and it has a very fast searching time
+
+
+
+
