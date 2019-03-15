@@ -1,5 +1,4 @@
-//Jia Liang
-
+//Jia
 public class Menu {
     public static void mainMenu() {
         System.out.println("Welcome to Personal Directory app, you are in the main menu:");

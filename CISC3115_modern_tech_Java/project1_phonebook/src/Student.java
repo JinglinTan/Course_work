@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-//Jia Liang
+//Jia
 public class Student extends Person {
     private ArrayList<Mentor> mentors;
     private ArrayList<Mentor> pings;
@@ -29,7 +29,7 @@ public class Student extends Person {
     public boolean addMentor(Mentor mentor) {
         for (int i = 0; i < mentors.size(); i++) {
             if (mentors.get(i) == mentor) {
-                System.out.println("The mentor is already added to this student, please reselect another mentor");
+                System.out.println("The mentor is already added to this student, please reselect a mentor");
                 return false;
             }
         }
