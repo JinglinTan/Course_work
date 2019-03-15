@@ -2,7 +2,6 @@ import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-//Jinglin
 public class Client {
     private static ArrayList<Person> addressBook = new ArrayList<Person>();
     private static Person selectedMember;

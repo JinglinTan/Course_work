@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-//Jinglin
 public class Mentor extends Person {
     private ArrayList<Student> mentees;
     private ArrayList<Student> pingMentees;

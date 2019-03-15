@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-//Jinglin
 public class Maps {
     private static Map<String, ArrayList<Student>> studentFirstNameMap = new HashMap<String, ArrayList<Student>>();
     private static Map<String, ArrayList<Student>> studentLastNameMap = new HashMap<String, ArrayList<Student>>();

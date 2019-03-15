@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-//Josh
 public class Switch {
     //switch level 0
     public static int mainMenuOptions(Scanner sc) {

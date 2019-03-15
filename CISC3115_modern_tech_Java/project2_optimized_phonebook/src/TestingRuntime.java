@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-//Josh
 public class TestingRuntime {
     public static void testRuntime(Scanner sc) {
         System.out.println("Please enter the number of entries to be tested:");

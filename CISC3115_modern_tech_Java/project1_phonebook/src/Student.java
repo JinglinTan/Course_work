@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-//Jia
 public class Student extends Person {
     private ArrayList<Mentor> mentors;
     private ArrayList<Mentor> pings;

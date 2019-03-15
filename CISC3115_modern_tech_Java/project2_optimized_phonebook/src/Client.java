@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-//Jinglin
 public class Client {
     private static ArrayList<Person> addressBook = new ArrayList<Person>();
     private static Person selectedMember;

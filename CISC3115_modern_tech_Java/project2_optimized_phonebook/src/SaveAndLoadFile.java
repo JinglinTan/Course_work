@@ -2,7 +2,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//Jinglin
 public class SaveAndLoadFile {
     //saveFile method
     public static void saveFile(PrintWriter pw, ArrayList<Person> addressBook) {
